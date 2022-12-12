@@ -1,0 +1,60 @@
+.square {
+    background: orangered; 
+    width: 200px; 
+    height: 200px;
+}
+
+.circle {
+    background: orangered; 
+    border-radius: 50%; 
+    width: 200px; 
+    height: 200px;
+}
+
+.triangle {
+    width: 0; 
+    height: 0; 
+    border-left: 80px solid transparent; 
+    border-right: 80px solid transparent; 
+    border-bottom: 160px solid orangered;
+}
+
+.polygon {
+    float: left;
+    width: 250px;
+    height: 250px;
+    shape-outside: polygon(
+        0 0,
+        100% 0,
+        100% 20%,
+        60% 20%,
+        60% 100%,
+        40% 100%,
+        40% 20%,
+        0 20%
+    );
+    clip-path: polygon(
+        0 0,
+        100% 0,
+        100% 20%,
+        60% 20%,
+        60% 100%,
+        40% 100%,
+        40% 20%,
+        0 20%
+    );
+    background: orangered; 
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+div{
+    transition: 2s;
+    cursor: pointer;
+    margin: 70px 0;
+}
